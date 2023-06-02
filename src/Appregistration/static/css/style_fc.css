@@ -1,0 +1,135 @@
+@import 'reset.css';
+
+
+body {
+    background-image: url("images/Fichier-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+.form-box {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background: transparent;
+    border: 2 solid rgb(255, 243, 243);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+
+.cool{
+    position: flex;
+    margin: 50px 0;
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 3px solid white;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: bisque;
+   
+  
+}
+.cool p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+input{
+    width: 100%;
+    height: 35px;
+    border-radius: 40px;
+    background: rgb(247, 245, 245);
+    border: none;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+.cool,label {
+    margin-bottom:20px ;
+}
+
+p, a {
+    
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: 'Lato';
+    
+}
+
+.verify a {
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    padding-top:  20px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 414px) {
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .cool{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        border-bottom: 3px solid white;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        color: bisque;
+      
+    }
+
+    .form-box {
+        position: relative;
+        width: 500px;
+        height: 200px;
+        background: transparent;
+        border: 2 solid rgb(255, 243, 243);
+        border-radius: 20px;
+        backdrop-filter: blur(30px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+

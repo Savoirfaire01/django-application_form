@@ -1,0 +1,25 @@
+
+<h1 style="text-align: center;">LISTE DES PARTICIPANTS INSCRITS</h1>
+<a href="{% url 'Appregistration:participants' %}"
+    style="display: block; margin-bottom:30px ;margin-left: 15px; font-weight:600">Accueil</a>
+<div>
+    <table border=".1" cellpadding=".1" width="100%">
+
+        <tr>
+            <tr>
+                    <th>NOM DU PARTICIPANT</th>
+                    <th>PRENOMS DU PARTICIPANT DU PARTICIPANT</th>
+                    <th>NUMERO DE TELEPHONE DU PARTICIPANT</th>
+                    <th>ADRESSE EMAIL DU PARTICIPANT</th>
+
+            </tr>
+        {% for form in forms %}
+                <td>{{ form.nom_du_participant }}</td>
+                <td>{{ form.prenom_du_participant }}</td>
+                <td> {{ form.numero_du_participant}}</td>
+                <td> {{ form.email_du_participant}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>

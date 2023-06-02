@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <link rel="icon" type="image/png" href="{% static 'images/SIMPLON-ron.png' %}">
+  <link rel="stylesheet" href="{% static 'css/style_fc.css'%}">
+</head>
+
+<body>
+
+  <section>
+    <div class="form-box">
+      <div class="container">
+        
+        <form action="" method="POST">
+          
+          {% csrf_token %}
+          <div class="cool">
+            <h1 style="margin-bottom: 20px;">FORMULAIRE D'INSCRIPTION</h1>
+            {{ form.as_p }}
+          </div>
+          <div class="register">
+            <input style=" cursor: pointer; background-color:blue; color:white" type="submit" value="S'inscrire" >
+          </div>
+          <p class="verify"><a href="{% url 'Appregistration:part' %}" >CONSULTER LA LISTE DES PERSONNES ENREGISTREES</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</html>
